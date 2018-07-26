@@ -1,0 +1,95 @@
+h1 {
+    margin-top: 100px;
+	color: #6918B4;
+	text-align: center;
+	font-size:6vw;
+    margin-bottom: 00;
+}
+
+
+h2 {
+
+	color: #6918B4;
+	text-align: center;
+	font-size: 2vw;
+    margin-bottom: 650px;
+}
+
+
+html, body {
+	margin:0;
+	padding:0;
+}
+
+
+body {
+	font-size:2vw;
+    background-image: url("../images/bridge.jpeg");
+    background-attachment: fixed;
+}
+
+#content {
+
+	color: black;
+	text-align: center;
+	background-color: white;
+	padding:200px;
+}
+
+#footer {
+
+	color: #6918B4;
+	font-size: 60%;
+	font-style: italic;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+border-top: 3px solid #edf5fc;
+    position: fixed;
+    background-color: white;
+}
+
+.navbar {
+	width: 100%;
+    text-align: center;
+    position: fixed;
+    padding-bottom: 16px;
+	top: 0;
+}
+
+.navbar a {
+    text-align: center;
+    font-size: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a.one:link {
+    color: #babafc;
+
+}
+
+/* visited link */
+a.one:visited {
+    color: #babafc;
+}
+
+/* mouse over link */
+a.one:hover {
+    color: white;
+}
+
+a.two:link {
+    color: #6918B4;
+}
+
+/* visited link */
+a.two:visited {
+    color: #6918B4;
+}
+/* mouse over link */
+a.two:hover {
+    color: #babafc;
+}
+
+
