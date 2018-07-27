@@ -25,6 +25,7 @@ html, body {
 body {
 	font-size:2vw;
     background-image: url("../images/bridge.jpeg");
+	background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
