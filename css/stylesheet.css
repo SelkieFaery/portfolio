@@ -16,13 +16,17 @@ h2 {
 }
 
 
+html, body {
+	margin:0;
+	padding:0;
+}
+
 
 body {
 	font-size:2vw;
     background-image: url("../images/bridge.jpeg");
-	background-repeat: no-repeat;
+background-repeat: no-repeat;
     background-attachment: fixed;
-	    background-size: contain;
 }
 
 #content {
@@ -45,6 +49,7 @@ border-top: 3px solid #edf5fc;
     position: fixed;
     background-color: white;
 }
+
 .navbar {
 	width: 100%;
     text-align: center;
@@ -87,3 +92,5 @@ a.two:visited {
 a.two:hover {
     color: #babafc;
 }
+
+
