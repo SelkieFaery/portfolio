@@ -29,7 +29,6 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -182,13 +181,12 @@ section {
 <th><textarea rows="4" cols="50" name="comment"></textarea></th>
 </tr>
 </table>
+<div class="centertext">
 <input type="submit"  value="Submit">
-<input type="button" onclick="reset()" value="Reset form"><br>
-<br>
-
+<input type="button" onclick="reset()" value="Reset form">
+</div>
 </fieldset>
 </form>
-
 </div>
 <div id="footer">
   <a href="https://github.com/SelkieFaery">
