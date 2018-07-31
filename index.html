@@ -17,21 +17,18 @@
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
-
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -39,18 +36,18 @@ $(document).ready(function(){
   });
 });
 </script>
- <style>
+<style>
 body, html, .main {
-    height: 100%;
+   height: 100%;
 }
-
 section {
-    min-height: 100%;
+   min-height: 100%;
 }
 </style>
 </head>
 
 <body>
+
 <div class="navbar">
 <a href="#section2">Info ></a>
       <a class="one" href="index.html">HOME</a>
@@ -64,23 +61,22 @@ section {
 
 <h2>Front-End Web Developer</h2>
 
+
+
 <div id="content">
-<div class="main" id="section2"></div>
+
+
 <br>
 <br>
 Info:
+<div class="main" id="section2"></div>
 <br>
 <br>
 Feel free to explore my page.  Check out the About Me
-<br>
-page for information about my skills, 
-<br>
-qualifications, and hobbies.  My portfolio page 
-<br>
-includes links to some of my work.  Use the form on 
-<br>
-the Contact Me page if interested in hiring me or 
-<br>
+page for information about my skills,
+qualifications, and hobbies.  My portfolio page
+includes links to some of my work.  Use the form on
+the Contact Me page if interested in hiring me or
 just to chat.
 <br>
 <br>
@@ -88,8 +84,8 @@ just to chat.
 </div>
 
 <div id="footer">
-<a class="two" href="mailto:sheilapercy1@gmail.com"><i class="fa fa-envelope"></i>sheilapercy1@gmail.com</a> - 
-<i>Copyright &copy; 2018 Sheila Percy</i> 
+<a class="two" href="mailto:sheilapercy1@gmail.com"><i class="fa fa-envelope"></i>sheilapercy1@gmail.com</a> -
+<i>Copyright &copy; 2018 Sheila Percy</i>
 </div>
 </body>
 </html>
