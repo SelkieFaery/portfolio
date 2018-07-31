@@ -40,15 +40,20 @@ body {
 #content {
 
 	color: black;
-	text-align: center;
 	background-color: white;
   padding-top:200px;
 	padding-bottom:200px;
   padding-left: 50px;
   padding-right: 50px;
-  font-size: 150%;
+    font-size: 150%;
+}
+.centertext{
+  	text-align: center;
 }
 
+.about {
+
+}
 
 #footer {
 
