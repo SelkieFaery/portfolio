@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<title>Sheila Percy</title>
+<meta name="description" content="Sheila Percy's online web developing portfolio."/>
+<meta name="keywords" content=" web developer, web, developer, Sheila Percy, Fredericksburg, VA, Virginia, Spotsylvania"/>
+<meta name="Author" content="Sheila Percy"/>
+<meta name="Copyright" content="Copyright &copy; 2018 Sheila Percy"/>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/form.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<style>
+body, html, .main {
+   height: 100%;
+}
+section {
+   min-height: 100%;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+
+      <a class="one" href="index.html">HOME</a>
+      <a class="one" href="about.html">ABOUT</a>
+      <a class="one" href="portfolio.html">PORTFOLIO</a>
+      <a class="one" href="contact.html">CONTACT ME</a>
+      <a class="one" href="mailto:sheilapercy1@gmail.com"><i class="fa fa-envelope"></i>sheilapercy1@gmail.com</a>
+</div> <!--closing tag for navbar-->
+
+<h1>SHEILA PERCY</h1>
+<a class="three" href="#section2">Contact ></a>
+<h2>Contact Me</h2>
+
+
+
+<div id="content">
+<div class="main" id="section2"></div>
+<form name="myForm" onsubmit="return validateForm()" action="mailto:SelkieFaery@gmail.com" method="post" enctype="text/plain">
+<br>
+<fieldset>
+
+*required fields<br>
+<br>
+<p id="demo"></p>
+<br>
+<table class="center">
+<tr>
+<th>First Name:*</th>
+<th><input type="text" id="fName" value="First Name" onblur="onBlur(this)" onfocus="onFocus(this)" name="firstName"></th>
+</tr>
+<tr>
+<th>Last Name:</th>
+<th><input type="text" id="lName" value="Last Name" onblur="onBlur(this)" onfocus="onFocus(this)" name="lastName"></th>
+</tr>
+<tr>
+<th>Address:</th>
+<th><input type="text" id="address" name="address"></th>
+</tr>
+<tr>
+<th>City:*</th>
+<th><input type="text" id="city" name="city"></th>
+</tr>
+<tr>
+<th>State:*</th>
+  <th><select name="state" id="state">
+     <option value="--Select--">--Select--</option>
+    <option value="Alabama">Alabama</option>
+    <option value="Alaska">Alaska</option>
+    <option value="Arizona">Arizona</option>
+    <option value="Arkansas">Arkansas</option>
+	<option value="California">California</option>
+    <option value="Colorado">Colorado</option>
+    <option value="Connecticut">Connecticut</option>
+    <option value="Delaware">Delaware</option>
+	<option value="Florida">Florida</option>
+    <option value="Georgia">Georgia</option>
+	<option value="Hawaii">Hawaii</option>
+    <option value="Idaho">Idaho</option>
+    <option value="Illinois">Illinois</option>
+    <option value="Indiana">Indiana</option>
+	<option value="Iowa">Iowa</option>
+    <option value="Kansas">Kansas</option>
+    <option value="Kentucky">Kentucky</option>
+    <option value="Louisiana">Louisiana</option>
+	<option value="Maine">Maine</option>
+    <option value="Maryland">Maryland</option>
+	<option value="Massachusetts">Massachusetts</option>
+    <option value="Michigan">Michigan</option>
+    <option value="Minnesota">Minnesota</option>
+    <option value="Mississippi">Mississippi</option>
+	<option value="Missouri">Missouri</option>
+    <option value="Montana">Montana</option>
+    <option value="Nebraska">Nebraska</option>
+    <option value="Nevada">Nevada</option>
+	<option value="New Hampshire">New Hampshire</option>
+    <option value="New Jersey">New Jersey</option>
+    <option value="New Mexico">New Mexico</option>
+    <option value="New York">New York</option>
+    <option value="North Carolina">North Carolina</option>
+    <option value="North Dakota">North Dakota</option>
+	<option value="Ohio">Ohio</option>
+    <option value="Oklahoma">Oklahoma</option>
+    <option value="Oregon">Oregon</option>
+    <option value="Pennsylvania">Pennsylvania</option>
+	<option value="Rhode Island">Rhode Island</option>
+    <option value="South Carolina">South Carolina</option>
+	<option value="South Dakota">South Dakota</option>
+    <option value="Tennessee">Tennessee</option>
+    <option value="Texas">Texas</option>
+    <option value="Utah">Utah</option>
+	<option value="Vermont">Vermont</option>
+    <option value="Virginia">Virginia</option>
+    <option value="Washington">Washington</option>
+    <option value="West Virginia">West Virginia</option>
+	<option value="Wisconsin">Wisconsin</option>
+    <option value="Wyoming">Wyoming</option>
+  </select></th>
+</tr>
+
+<tr>
+<th>Zip code:</th>
+<th><input type="text" id="zip" class="zip" name="zip"></th>
+</tr>
+<tr>
+<th>Phone:*</th>
+<th><input type="text" id="areaCode" class="areaCode" name="areaCode">
+<input type="text" id="phoneNumber" class="phoneNumber" name="phoneNumber"></th>
+</tr>
+<tr>
+<th>Email:*</th>
+<th><input type="text" id="email1" name="emailAddress"></th>
+</tr>
+<tr>
+<th>Confirm Email:*</th>
+<th><input type="text" id="email2" name="confirmEmail"></th>
+</tr>
+<tr>
+<th>Contact Method:<br>
+(select more than one)</th>
+<th><input type="checkbox" name="contMeth" value="Phone">
+<label for="phone">Phone</label>
+<input type="checkbox" name="contMeth" value="E-Mail">
+<label for="email">E-Mail</label><br>
+<input type="checkbox" name="contMeth" value="Mail">
+<label for="mail">Mail</label>
+<input type="checkbox" name="contMeth" value="LinkedIn">
+<label for="linkedIn">LinkedIn</label></th>
+</tr>
+<tr>
+<th>Comments:</th>
+<th><textarea rows="4" cols="50" name="comment"></textarea></th>
+</tr>
+</table>
+<input type="submit"  value="Submit">
+<input type="button" onclick="reset()" value="Reset form"><br>
+<br>
+
+</fieldset>
+</form>
+
+</div>
+<div id="footer">
+  <a href="https://github.com/SelkieFaery">
+    <img src="images/GitHub.png" alt="GitHub" id="social";>
+  </a>
+  <a href="https://www.facebook.com/Selkie.Faery">
+    <img src="images/facebook.png" alt="Facebook" id="social";>
+  </a>
+  <a href="https://twitter.com/GwyllionFaery">
+    <img src="images/twitter.png" alt="Twitter" id="social";>
+  </a>
+  <a href="https://www.instagram.com/selkie.faery/?hl=en">
+    <img src="images/instagram.png" alt="Instragram" id="social";>
+  </a>
+  <a href="https://www.linkedin.com/in/sheila-percy-667b7618/">
+    <img src="images/linkedin.png" alt="LinkedIn" id="social";>
+  </a>
+<a class="two" href="mailto:sheilapercy1@gmail.com"><i class="fa fa-envelope"></i>sheilapercy1@gmail.com</a> -
+<i>Copyright &copy; 2018 Sheila Percy</i>
+</div>
+</body>
+</html>
