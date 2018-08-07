@@ -163,13 +163,13 @@ table {
   }
 
 th {
-    padding: 5px;
+    padding: .2vw;
     	vertical-align: top;
 }
 
 .areaCode {
 	width: 8%;
-	margin-right: 1px;
+	margin-right: .3vw;
 }
 
 .phoneNumber {
@@ -191,4 +191,10 @@ img.image2:hover {
 
 .zip {
 	width: 20%;
+}
+
+.comment-text-area {
+float: left;
+width:100%;
+height: auto;
 }
