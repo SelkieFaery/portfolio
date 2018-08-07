@@ -15,7 +15,7 @@ h2 {
 	text-align: center;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 	font-size: 4vw;
-  margin-bottom: 27vw;
+  margin-bottom: 650px;
   margin-top: 0;
 }
 
@@ -74,6 +74,7 @@ body {
 	float: left;
   padding-left: 10px;
 }
+
 
 .navbar {
 	width: 100%;
