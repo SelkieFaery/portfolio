@@ -13,7 +13,7 @@ h2 {
 
 	color: #babafc;
 	text-align: center;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+      text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 	font-size: 4vw;
   margin-bottom: 650px;
   margin-top: 0;
@@ -47,7 +47,7 @@ body {
 	padding-bottom:200px;
   padding-left: 50px;
   padding-right: 50px;
-    font-size: 150%;
+    font-size: 100%;
 }
 .centertext{
   	text-align: center;
@@ -60,7 +60,7 @@ body {
 #footer {
 
 	color: #6918B4;
-	font-size: 20px;
+	font-size: 1vw;
 	font-style: italic;
 	text-align: center;
 	bottom: 0;
@@ -72,7 +72,9 @@ body {
 
 #social {
 	float: left;
-  padding-left: 10px;
+  padding-left: 1vw;
+    width: 1.5%;
+    height: auto;
 }
 
 
@@ -89,7 +91,7 @@ body {
 .navbar a {
     text-align: center;
     font-size: 1.5vw;
-    padding: 14px 16px;
+    padding: 1vw 1vw;
     text-decoration: none;
 }
 
