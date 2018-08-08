@@ -179,8 +179,16 @@ th {
 	width: 40%;
 	text-decoration: none;
     transition: transform .1s;
+    border: 1px solid blue;
 }
-
+.image3 {
+	width: 30%;
+    border: 1px solid black;
+}
+.image4 {
+	width: 45%;
+    border: 1px solid black;
+}
 img.image2:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -ms-transform: scale(1.01); /* IE 9 */
