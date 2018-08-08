@@ -149,3 +149,5 @@ function reset() {
 	//resets form
     document.getElementById("myForm").reset();
 }
+
+$('textarea').autoResize();
