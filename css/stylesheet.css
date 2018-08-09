@@ -15,7 +15,7 @@ h2 {
 	text-align: center;
       text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 	font-size: 4vw;
-  margin-bottom: 20vw;
+  margin-bottom: 300px;
   margin-top: 0;
 }
 
@@ -32,7 +32,7 @@ body, html {
 body {
 	font-size:2vw;
   background-image: url("../images/city2.jpeg");
-  height: 85%;
+  height: 80%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
