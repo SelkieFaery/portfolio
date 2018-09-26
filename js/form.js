@@ -50,12 +50,6 @@ var count = 0;
         alert("Please use only letters A - Z for city");
         return false;
     }
-	//Tests if user selected state
-    if (document.getElementById("state").value == "--Select--") {
-	//Allerts user to select state
-        alert("Please select your state");
-        return false;
-    }
 
 	//Tests if value for area code is blank
     if (document.getElementById("areaCode").value === "") {
@@ -121,7 +115,7 @@ var count = 0;
           }
           if(!okay){
   		//Alert if less than two contact methods were selected
-              alert("Please choose at least one contact methods");
+              alert("Please choose at least one contact method");
               return false;
           }
       }
@@ -149,3 +143,7 @@ function reset() {
 	//resets form
     document.getElementById("myForm").reset();
 }
+
+
+
+
