@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 <title>Sheila Percy</title>
 <meta name="description" content="Sheila Percy's online web developing portfolio."/>
 <meta name="keywords" content=" web developer, web, developer, Sheila Percy, Fredericksburg, VA, Virginia, Spotsylvania"/>
@@ -12,30 +12,13 @@
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="js/form.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-      // Store hash
-      var hash = this.hash;
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="js/form.js"></script>
+<script src="js/myApp.js"></script>
+<script src="js/myCtrl.js"></script>
+<script src="js/jquery.js"></script>
+
 <style>
 body, html, .main {
    height: 100%;
@@ -44,12 +27,12 @@ section {
    min-height: 100%;
 }
 </style>
+
 </head>
 
 <body>
 
 <div class="navbar">
-
       <a class="one" href="index.html">HOME</a>
       <a class="one" href="about.html">ABOUT</a>
       <a class="one" href="portfolio.html">PORTFOLIO</a>
@@ -61,13 +44,12 @@ section {
 <a class="three" href="#section2">Contact ></a>
 <h2>Contact Me</h2>
 
-
-
 <div id="content">
+
 <div class="main" id="section2"></div>
+
 <form name="myForm" onsubmit="return validateForm()" action="mailto:SelkieFaery@gmail.com" method="post" enctype="text/plain">
 <br>
-
 
 *required fields<br>
 <br>
@@ -91,62 +73,13 @@ section {
 <th><input type="text" id="city" name="city"></th>
 </tr>
 <tr>
-<th>State:*</th>
-  <th><select name="state" id="state">
-     <option value="--Select--">--Select--</option>
-    <option value="Alabama">Alabama</option>
-    <option value="Alaska">Alaska</option>
-    <option value="Arizona">Arizona</option>
-    <option value="Arkansas">Arkansas</option>
-	<option value="California">California</option>
-    <option value="Colorado">Colorado</option>
-    <option value="Connecticut">Connecticut</option>
-    <option value="Delaware">Delaware</option>
-	<option value="Florida">Florida</option>
-    <option value="Georgia">Georgia</option>
-	<option value="Hawaii">Hawaii</option>
-    <option value="Idaho">Idaho</option>
-    <option value="Illinois">Illinois</option>
-    <option value="Indiana">Indiana</option>
-	<option value="Iowa">Iowa</option>
-    <option value="Kansas">Kansas</option>
-    <option value="Kentucky">Kentucky</option>
-    <option value="Louisiana">Louisiana</option>
-	<option value="Maine">Maine</option>
-    <option value="Maryland">Maryland</option>
-	<option value="Massachusetts">Massachusetts</option>
-    <option value="Michigan">Michigan</option>
-    <option value="Minnesota">Minnesota</option>
-    <option value="Mississippi">Mississippi</option>
-	<option value="Missouri">Missouri</option>
-    <option value="Montana">Montana</option>
-    <option value="Nebraska">Nebraska</option>
-    <option value="Nevada">Nevada</option>
-	<option value="New Hampshire">New Hampshire</option>
-    <option value="New Jersey">New Jersey</option>
-    <option value="New Mexico">New Mexico</option>
-    <option value="New York">New York</option>
-    <option value="North Carolina">North Carolina</option>
-    <option value="North Dakota">North Dakota</option>
-	<option value="Ohio">Ohio</option>
-    <option value="Oklahoma">Oklahoma</option>
-    <option value="Oregon">Oregon</option>
-    <option value="Pennsylvania">Pennsylvania</option>
-	<option value="Rhode Island">Rhode Island</option>
-    <option value="South Carolina">South Carolina</option>
-	<option value="South Dakota">South Dakota</option>
-    <option value="Tennessee">Tennessee</option>
-    <option value="Texas">Texas</option>
-    <option value="Utah">Utah</option>
-	<option value="Vermont">Vermont</option>
-    <option value="Virginia">Virginia</option>
-    <option value="Washington">Washington</option>
-    <option value="West Virginia">West Virginia</option>
-	<option value="Wisconsin">Wisconsin</option>
-    <option value="Wyoming">Wyoming</option>
-  </select></th>
+<th>State:</th>
+<th><div ng-app="myApp" ng-controller="myCtrl">
+<select>
+<option ng-repeat="x in states">{{x}}</option>
+</select></th>
+</div>
 </tr>
-
 <tr>
 <th>Zip code:</th>
 <th><input type="text" id="zip" class="zip" name="zip"></th>
@@ -165,8 +98,8 @@ section {
 <th><input type="text" id="email2" name="confirmEmail"></th>
 </tr>
 <tr>
-<th>Contact Method:<br>
-(select more than one)</th>
+<th>Preferred Contact<br>
+ Method:</th>
 <th><input type="checkbox" name="contMeth" value="Phone">
 <label for="phone">Phone</label>
 <input type="checkbox" name="contMeth" value="E-Mail">
@@ -184,9 +117,11 @@ section {
 <div class="centertext">
 <input type="submit"  value="Submit">
 <input type="button" onclick="reset()" value="Reset form">
+
 </div>
 
 </form>
+
 </div>
 <div id="footer">
   <a href="https://github.com/SelkieFaery">
@@ -207,5 +142,6 @@ section {
 <a class="two" href="mailto:sheilapercy1@gmail.com"><i class="fa fa-envelope"></i>sheilapercy1@gmail.com</a> -
 <i>Copyright &copy; 2018 Sheila Percy</i>
 </div>
+
 </body>
 </html>
