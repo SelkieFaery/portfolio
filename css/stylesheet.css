@@ -19,6 +19,15 @@ h2 {
   margin-top: 0;
 }
 
+h2 {
+
+	color: #babafc;
+	text-align: center;
+      text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size: 3vw;
+  margin-bottom: 300px;
+  margin-top: 0;
+}
 
 html, body {
 	margin:0;
